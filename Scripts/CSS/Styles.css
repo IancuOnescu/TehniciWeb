@@ -1,0 +1,263 @@
+header{
+	color:white;
+	overflow: hidden;
+	min-height: 115px;
+}
+
+header figure{
+	position:relative;
+	top: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 55px;
+}
+
+header figure img{
+	height: 250%;
+}
+
+body{
+	padding: 0;
+	margin: 0;
+}
+
+.back-home{
+	background-image: url('../../Resources/back-home.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 100vh;
+}
+
+nav{
+	left:0;
+	position: sticky;
+	top: 0;
+	width:100%;
+	display: flex;
+	z-index: 100;
+}
+
+.topnav{
+	background-color: rgba(0, 0, 0, 0.5);
+	opacity: 0.7;
+	width:100%;
+	overflow:hidden;
+}
+
+.topnav  a.title{
+	float:left;
+	color: white;
+	opacity: 1;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 1.4vw;
+	border-right: 3px solid white;
+	border-left: 0;
+	padding: 7px;
+	height: 100%;
+	vertical-align: middle;
+}
+
+.topnav a{
+	float:right;
+	color: white;
+	opacity: 1;
+	text-decoration: none;
+	font-size: 1.2vw;
+	font-weight: bold;
+	border-left: 3px solid white;
+	padding: 7px;
+	height: 100%;
+	vertical-align: middle;
+	font-family: helvetica-w01-light, helvetica-w02-light, sans-serif;
+}
+
+.dropdown{
+	height: 100%;
+	overflow: hidden;
+	float: right;
+}
+
+.dropdown .dropbtn{
+	display:inline-block;
+	height:100%;
+}
+
+.dropdown-content{
+	display:none;
+	position:absolute;
+	z-index:1;
+	margin-top:-4px;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a{
+	display:block;
+	float:none;
+}
+
+.topnav a.last{
+	background-color: rgba(128, 191, 255, 1);
+}
+
+.topnav a:hover{
+	background-color: black;
+}
+
+.topnav a.last:hover{
+	background-color: rgba(255, 153, 51, 1);
+}
+
+.content-home{
+	display:flex;
+	position:relative;
+	top:-70px;
+}
+
+.content-home .pannel{
+	background-color: rgba(102, 179, 255, 0.8);
+	color: white;
+	flex: 1;
+	border-top: 7px solid rgba(255, 255, 255, 0.8);
+	border-left: 7px solid rgba(255, 255, 255, 0.8);
+	border-bottom-right-radius: 5px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: -60px;
+	padding: 15px;
+	font-family: helvetica-w01-light, helvetica-w02-light, sans-serif;
+}
+
+.homefoot{
+	background-color: #0086b3;
+	padding: 10px;
+	color:white;
+}
+
+.homefoot ul{
+	position:relative;
+	display: flex;
+	padding-inline-start: 0px;
+}
+
+.homefoot li{
+	flex: 1;
+	text-align: center;
+	padding:5px;
+	display:inline-block;
+	border-right: 2px solid white;
+	font-family: helvetica-w01-light, helvetica-w02-light, sans-serif;
+}
+
+.homefoot li.last{
+	border-right: 0;
+}
+
+.back-servicii{
+	background-image: url('../../Resources/back-servicii.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 100vh;
+}
+
+.content-general{
+	display: flex;
+	background-color: rgba(0, 0, 0, 0.4);
+	border-radius: 10px;
+	top: 10%;
+	left: 3.5%;
+	width: 90%;
+	position: absolute;
+	padding: 20px;
+	font-family: helvetica-w01-light, helvetica-w02-light, sans-serif;
+	color: white;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	overflow: scroll;
+	height: 80%;
+	overflow-x:hidden;
+}
+
+.content-general h2{
+	flex: 1 0, 100%;
+	border-top: 2px solid white;
+	border-left: 2px solid white;
+	border-bottom: 2px solid white;
+	font-size: 20px;
+	margin-top: -2px;
+	margin-bottom: 0px;
+}
+
+.content-general p{
+	border-left: 2px solid white;
+	margin:0px;
+}
+
+.content-general-item:hover{
+	background: none;
+	transition: background 0s;
+}
+
+.content-general-item{
+	margin-bottom: 20px;
+	box-sizing:content-box;
+}
+
+.search-container{
+	float: right;
+	position:sticky;
+	top: -20px;;
+}
+
+.search-container input[type=text]{
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  font-size: 17px;
+  color:black;
+  width: 20%;
+  float:right;	
+}
+
+.search-container button{
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: rgba(102, 179, 255, 0.6);
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  height:32px;
+  width: 32px;
+  color:white;
+  margin-bottom:25px;
+}
+
+.angajari-table{
+	border-collapse: collapse;
+	empty-cells: show;
+}
+
+.angajari-table td, th{
+	border: 2px solid white;
+	color:white;
+	padding: 10px;
+	text-align: center;
+}
+
+.angajari-table td:first-child{
+	font-weight: bold;
+}
+
+:target{
+	background: rgba(255, 153, 51, 1);
+	transition: background .4s ease .4s;
+}
