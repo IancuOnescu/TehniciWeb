@@ -1,0 +1,47 @@
+.content-angajari{
+	display: grid;
+	grid-template-columns: 25% 25% 25% 25%;
+	top: 10%;
+	left:3.5%;
+	width: 90%;
+	position: absolute;
+	padding: 20px;
+	font-family: helvetica-w01-light, helvetica-w02-light, sans-serif;
+	color: white;
+	height: 80%;
+	overflow-x:hidden;
+
+}
+
+.container-person{
+	display:flex;
+	flex-direction: column;
+	border-radius: 3px;
+	margin: 5%;
+}
+
+.container-person-upper{
+	height:50%;
+	display:block;
+}
+
+.container-person-upper img{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.container-person-lower{
+	display:block;
+	height:50%;
+	background-color:rgba(255, 255, 255, 0.8);
+	text-align: center;
+	color:grey;
+	border-top-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+
+.container-person-lower h2{
+	color:rgba(102, 179, 255);
+}
+

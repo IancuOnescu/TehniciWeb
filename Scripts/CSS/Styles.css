@@ -166,12 +166,23 @@ nav{
 	border-right: 0;
 }
 
-.back-servicii{
-	background-image: url('../../Resources/back-servicii.jpg');
+.back-servicii, .back-angajari, .back-personal{
 	background-size: cover;
 	background-repeat: no-repeat;
 	width: 100%;
 	height: 100vh;
+}
+
+.back-servicii{
+	background-image: url('../../Resources/back-servicii.jpg');
+}
+
+.back-angajari{
+	background-image: url('../../Resources/back-angajari.jpg');
+}
+
+.back-personal{
+	background-image: url('../../Resources/back-personal.jpg');
 }
 
 .content-general{
@@ -210,13 +221,13 @@ nav{
 .content-general-item{
 	margin-bottom: 20px;
 	box-sizing:content-box;
-	padding-top:50px;
-	margin-top:-50px;
+	padding-top:300px;
+	margin-top:-300px;
 	background-clip: conent-box;
 }
 
 @keyframes anim{
-	0% { 
+	30% { 
 		background: rgba(255, 153, 51, 1)
 	}
 	100% {
@@ -226,15 +237,6 @@ nav{
 
 :target .fade-out{
 	animation: anim 2.5s;
-}
-
-.content-general-item:before{
-	content: "";
-    position: absolute;
-    top: -25px;
-    left: 0;
-    right: 0;
-    border-top: 1px solid #ccc;
 }
 
 .search-container{
@@ -266,27 +268,4 @@ nav{
   width: 32px;
   color:white;
   margin-bottom:25px;
-}
-
-.angajari-table{
-	border-collapse: collapse;
-	empty-cells: show;
-	margin-bottom: 30px;
-}
-
-.angajari-table td, th{
-	border: 2px solid white;
-	color:white;
-	padding: 10px;
-	text-align: center;
-}
-
-.angajari-table td:first-child{
-	font-weight: bold;
-}
-
-.angajari-table caption{
-	font-size: 20px;
-	font-weight: bold;
-	color: rgba(255, 153, 51, 1);
 }
