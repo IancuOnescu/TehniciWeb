@@ -273,12 +273,27 @@ nav{
 }
 
 @media only screen and (max-width: 600px) {
-  .back-home {
-	  width:100%
-  }
+	.back-home {
+		width:100%
+	}
   
-  .content-home .pannel{
-	margin-bottom: 20px;
-}
-
+	.content-home .pannel{
+		margin-bottom: 20px;
+	}
+	
+	.content-general{
+		max-width:300px;
+	}
+	
+	.topnav  a{
+		font-size:3.5vw;
+	}
+	
+	.topnav  a.title{
+		display:none;
+	}
+	
+	.dropbtn{
+		font-size:3.5vw;
+	}
 }
