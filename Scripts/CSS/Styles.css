@@ -125,6 +125,7 @@ nav{
 	display:flex;
 	position:relative;
 	top:-70px;
+	flex-wrap:wrap;
 }
 
 .content-home .pannel{
@@ -139,6 +140,7 @@ nav{
 	margin-bottom: -60px;
 	padding: 15px;
 	font-family: helvetica-w01-light, helvetica-w02-light, sans-serif;
+	min-width:200px;
 }
 
 .homefoot{
@@ -268,4 +270,15 @@ nav{
   width: 32px;
   color:white;
   margin-bottom:25px;
+}
+
+@media only screen and (max-width: 600px) {
+  .back-home {
+	  width:100%
+  }
+  
+  .content-home .pannel{
+	margin-bottom: 20px;
+}
+
 }
