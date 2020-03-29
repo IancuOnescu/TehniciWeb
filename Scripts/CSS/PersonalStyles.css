@@ -10,7 +10,7 @@
 	color: white;
 	height: 80%;
 	overflow-x:hidden;
-
+	grid-auto-flow: row;
 }
 
 .container-person{
@@ -46,3 +46,8 @@
 	color:rgba(102, 179, 255);
 }
 
+@media only screen and (max-width: 600px) {
+	.content-personal{
+		grid-template-columns: 100%;
+	}
+}

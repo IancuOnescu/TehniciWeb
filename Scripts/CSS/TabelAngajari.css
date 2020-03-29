@@ -25,3 +25,53 @@ table{
 	margin-left:auto;
 	margin-right:auto;
 }
+
+
+@media only screen and (max-width: 600px) {	
+	.angajari-table td, th{
+		padding: 0;
+		padding-left: 50%; 
+		margin-bottom: 2px;
+	}
+	
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	tr { border: 1px solid #ccc; }
+	
+	td { 
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+	}
+	
+	td:before { 
+		position: absolute;
+		top:2px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+	}
+	
+	td:nth-of-type(1):before { content: "Interval-ul orar/Ziua"; }
+	td:nth-of-type(2):before { content: "8:00-9:00"; }
+	td:nth-of-type(3):before { content: "9:00-11:00"; }
+	td:nth-of-type(4):before { content: "10:00-11:00"; }
+	td:nth-of-type(5):before { content: "11:00-12:00"; }
+	td:nth-of-type(6):before { content: "12:00-13:00"; }
+	td:nth-of-type(7):before { content: "13:00-14:00"; }
+	td:nth-of-type(8):before { content: "14:00-15:00"; }
+	td:nth-of-type(9):before { content: "15:00-16:00"; }
+	td:nth-of-type(10):before { content: "16:00-17:00"; }
+	td:nth-of-type(10):before { content: "17:00-18:00"; }
+	td:nth-of-type(10):before { content: "18:00-19:00"; }
+	td:nth-of-type(10):before { content: "19:00-20:00"; }
+}
