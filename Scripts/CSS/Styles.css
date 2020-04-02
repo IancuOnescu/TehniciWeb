@@ -152,7 +152,6 @@ nav{
 .homefoot ul{
 	position:relative;
 	display: flex;
-	padding-inline-start: 0px;
 }
 
 .homefoot li{
@@ -168,7 +167,7 @@ nav{
 	border-right: 0;
 }
 
-.back-servicii, .back-angajari, .back-personal{
+.back-servicii, .back-angajari, .back-personal, .back-contact{
 	background-size: cover;
 	background-repeat: no-repeat;
 	width: 100%;
@@ -185,6 +184,10 @@ nav{
 
 .back-personal{
 	background-image: url('../../Resources/back-personal.jpg');
+}
+
+.back-contact{
+	background-image: url('../../Resources/back-contact.jpg');
 }
 
 .content-general{
@@ -225,7 +228,6 @@ nav{
 	box-sizing:content-box;
 	padding-top:300px;
 	margin-top:-300px;
-	background-clip: conent-box;
 }
 
 @keyframes anim{
@@ -270,6 +272,104 @@ nav{
   width: 32px;
   color:white;
   margin-bottom:25px;
+}
+
+.animated-galery{
+	width : 600px;
+	height: 400px;
+	border: 1px solid white;
+	position: absolute;
+	right: 30%;
+	top: 20px;
+	overflow: hidden;
+	margin-bottom: 10rem;
+}
+
+.animated-galery figcaption{
+	position:absolute;
+	bottom: 0;
+	width:100%;
+	height:100%;
+	text-align: center;
+}
+
+.animated-galery figure{
+	position:relative;
+	width:600px;
+	height:400px;
+	margin:0;
+}
+
+.animated-galery img{
+	width:600px;
+	height:400px;
+}
+
+.animated-galery figure{	
+	position:absolute;
+	left:0;
+	top:0;
+	animation-name:galery-anim;
+	animation-timing-function:linear;
+	animation-iteration-count:infinite;
+	animation-duration:15s;	
+}
+
+
+.animated-galery figure:nth-of-type(1){
+	animation-delay:0s;
+	z-index:10;
+}
+.animated-galery figure:nth-of-type(2){
+	animation-delay:3s;
+	z-index:9;
+}
+.animated-galery figure:nth-of-type(3){
+	animation-delay:6s;
+	z-index:8;
+}
+.animated-galery figure:nth-of-type(4){
+	animation-delay:9s;
+	z-index:7;
+}
+.animated-galery figure:nth-of-type(5){
+	animation-delay:12s;
+	z-index:6;
+}
+
+@keyframes galery-anim{
+	0% {
+		z-index:10;
+		opacity:1;
+	}
+	5% {
+		opacity:1;
+		top:-100px;
+	}
+	10%{
+		opacity:1;
+		top: -200px;
+	} 
+	20%{
+		z-index:10;
+		opacity:0;
+		top:-400px;
+	}
+	20.1%{
+		z-index:-1;
+	}
+	80%{
+		opacity:1;
+		top:0;
+		left:0;
+		z-index:-1;
+	}	
+	80.1%{
+		z-index:0;
+	}
+	100%{
+		opacity:1;z-index:0;
+	}
 }
 
 @media only screen and (max-width: 600px) {
