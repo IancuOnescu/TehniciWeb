@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html lang="ro">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="author" content="SilverScalpel">
+		<meta name="description" content="Informatii relevante cu privire la organizarea consusrului de angajare si probele ce vor urma sa se desfasoare">
+		<meta name="keywords" content="Relatii cu publicul, Interval orar, Program probe, Informatii referitoare la concurs">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<title>AplciatieJS SilverScalpel</title>
+		<link rel="stylesheet" href="Scripts/CSS/Styles.css" type="text/css"/>
+
+  </head>
+  <body>
+    <section class="back-home">
+      <%- include("../fragments/header") %>
+      <script type="text/javascript" src="Scripts/JS/ejs.min.js"></script>
+      <script type="text/javascript" src="Scripts/JS/Sortare_Filtrare_Calculare.js"></script>
+    </section>
+    <section class="content-general">
+      <div class="buttons">
+        <button type="button" name="sortByName" id="sortByName" class="secsi">Sortare dupa nume</button>
+        <button type="button" name="sortByDate" id="sortByDate" class="secsi">Sortare dupa data</button>
+        <button type="button" name="sortByDate" id="sortByPrice" class="secsi">Sortare dupa pret</button>
+        <button type="button" name="sortByDate" id="resetare" class="secsi">Resetare</button>
+				<br><br><input type="checkbox" name="sortByDate" id="filtrareValabile">Filtrare servicii valabile</button>
+				<br><label>Pret maxim</label>
+				<input type="range" name="priceInputName" id="priceInputId" value="500" min="100" max="500" oninput="priceOutputId.value = priceInputId.value">
+	 			<output name="priceOutputName" id="priceOutputId">500</output>
+				<div id="div_total"></div>
+      </div>
+      <section id="content-general"></section>
+    </section>
+  </body>
+</html>

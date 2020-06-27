@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="ro">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="author" content="SilverScalpel">
+		<meta name="description" content="Prima clinica din Estul Europei medialiata pentru serviciile complete oferite.">
+		<meta name="keywords" content="Operatii, Consultatii, Analize, Recomadari, Sfaturi, Compasiune">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<title>Comentarii Clinica SilverScalpel</title>
+		<link rel="stylesheet" href="Scripts/CSS/Styles.css" type="text/css">
+	</head>
+	<body>
+		<section class="back-home">
+			<%- include("../fragments/header") %>
+		</section>
+		<section class="content-general">
+      <button type="button" id="addCommBtn" class="secsi">Adauga comentariu</button><br>
+      <div class="">
+        Afiseaza comentarii
+        <input type="checkbox" id="afisComm" checked="true">
+      </div>
+      <div id="addComm" class="modal">
+      	<div class="modal-content">
+      		<span class="close">&times;</span>
+					<div class="captcha-space" id="captcha-space"></div>
+					<button id="recaptcha">Creeaza alt captcha</button><br><br>
+					<label for="captcha">Introuduceti captcha:</label><br>
+					<input type="text" id="captcha" name="captcha" value="">
+      		<form action="/addComment" method="post" onsubmit="validateForm(event)">
+      			<label for="name">Nume:</label><br>
+      			<input type="text" id="name" name="name" value=""><br>
+      			<label for="comment">Comentariu:</label><br>
+      			<textarea id="comment" name="comment" rows="6" cols="180"></textarea><br><br>
+      			<input type="submit" value="Submit">
+      		</form>
+      	</div>
+      </div>
+			<section id="content-general"></section>
+			<script type="text/javascript">
+    			var get_user = "<%= locals.username %>"
+			</script>
+			<script type="text/javascript" src="Scripts/JS/ejs.min.js"></script>
+      <script type="text/javascript" src="Scripts/JS/ComentariiScript.js"></script>
+    </section>
+  </body>
+</html>

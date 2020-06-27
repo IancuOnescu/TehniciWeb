@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="ro">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="author" content="SilverScalpel">
+		<meta name="description" content="Prima clinica din Estul Europei medialiata pentru serviciile complete oferite.">
+		<meta name="keywords" content="Operatii, Consultatii, Analize, Recomadari, Sfaturi, Compasiune">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<title>Clinica SilverScalpel</title>
+		<link rel="stylesheet" href="Scripts/CSS/Styles.css" type="text/css">
+	</head>
+	<body>
+		<section class="back-home">
+			<%- include("../fragments/header") %>
+		</section>
+		<section class="content-general">
+			<form action="/register" method="post" class="form">
+				<label for="username">Username:</label><br>
+				<input type="text" id="username" name="username" value=""><br>
+				<label for="email">e-mail adress:</label><br>
+				<input type="text" id="email" name="email" value="eg. random@gmail.com"><br>
+				<label for="fname">Complete name:</label><br>
+				<input type="text" id="fname" name="fname" value=""><br>
+				<label for="pass">Password:</label><br>
+				<input type="password" id="pass" name="pass"><br>
+				<label for="diseases">Ati suferit de:</label><br>
+				<select id="diseases" name="diseases" multiple>
+				  <option value="generic">Boli generice</option>
+				  <option value="cardiac">Boli caridace</option>
+				  <option value="none">Niciuna</option>
+				</select><br>
+				<label type="field">field</label><br>
+				<input type="text" id="field" name="field"><br><br>
+				<input type="submit" value="Submit">
+				<input type="reset" value"Resest">
+			</form>
+		<section>
+	</body>
+</html>

@@ -1,0 +1,11 @@
+{
+  "lastId":6,"servicii":
+  [
+    {"id":0,"availableFrom":"10/01/2020","availability":"disponibil","manager":"Gigel Gigel","name":"Analize Medicale","descrption": "Analize variate", "pret":"100"},
+    {"id":1,"availableFrom":"10/03/2020","availability":"indisponibil","manager":"Gigel Marcel","name":"Servicii Curative","descrption":"Reducere pentru pactientii fideli", "pret":"300"},
+    {"id":2,"availableFrom":"11/04/2021","availability":"indisponibil","manager":"Gigel Costel","name":"Servicii la domiciliu","descrption":"Doar in timpul saptamanii", "pret":"350"},
+    {"id":3,"availableFrom":"15/01/2022","availability":"indisponibil","manager":"Gigel Gigel","name":"Activitati Suport","descrption":"Variatia este punctul forte", "pret":"500"},
+    {"id":4,"availableFrom":"13/02/2002","availability":"disponibil","manager":"Marcel Marcel","name":"Analize Medicale","descrption":"Very many", "pret":"350"},
+    {"id":5,"availableFrom":"15/12/2012","availability":"indisponibil","manager":"Gigel Costica","name":"Analize Medicale","descrption":"Very many", "pret":"350"}
+  ]
+}
