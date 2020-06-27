@@ -1,0 +1,41 @@
+<nav>
+	<ul class="topnav">
+		<% if(!locals.username){ %>
+		<li><a class="title" href="/">Clinica SilverScalpel</a></li>
+		<li class="dropdown">
+			<button class="dropbtn" id="Login">Login</button>
+		</li>
+		<% } else { %>
+		<li><a class="title" href="/"><%=locals.username%></a></li>
+		<li><a href="/logout">Logout</a></li>
+		<% } %>
+		<li><a href="/Contact" class="last">Contact</a></li>
+		<li><a href="/Personal">Personal</a></li>
+		<li><a href="/Angajari">Angajari</a></li>
+		<li class="dropdown">
+			<button class="dropbtn">Servicii oferite</button>
+			<ul class="dropdown-content">
+				<li><a href="/Servicii#analize">Analize</a></li>
+				<li><a href="/Servicii#servcurative">Servicii curative</a></li>
+				<li><a href="/Servicii#servdomiciliu">Servicii domiciliu</a></li>
+				<li><a href="/Servicii#activsuport">Activitati suport</a></li>
+			</ul>
+		</li>
+		<li><a href="/">Home</a></li>
+	</ul>
+</nav>
+<div id="myModal" class="modal">
+	<div class="modal-content">
+		<span class="close">&times;</span>
+		<p>Nu aveti cont? <a href="/Register">Apasati aici pentru inregistrare.</a></p>
+
+		<form action="/login" method="post">
+			<label for="username">Username:</label><br>
+			<input type="text" id="username" name="username" value=""><br>
+			<label for="password">Password:</label><br>
+			<input type="password" id="pass" name="pass"><br><br>
+			<input type="submit" value="Submit">
+		</form>
+	</div>
+</div>
+<script type="text/javascript" src="Scripts/JS/LoginScript.js"></script>
